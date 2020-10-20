@@ -6,8 +6,9 @@ import 'package:bmi_calculator/Result.dart';
 void main(){
   runApp(MaterialApp(
     home: Bmi(),
+    title: 'BMI Calculator',
     theme: ThemeData(
-      primaryColor: Color(0xFF323232)
+      primaryColor: Color(0xFF323232),
     ),
   ));
 }
@@ -194,7 +195,9 @@ class _BmiState extends State<Bmi> {
             }
             else{
               _bottom=true;
-              _bmiValue=20;
+              _heightCm = 150;
+              _weight=45;
+              _age=20;
             }
             if(_w3==false){
               _w3=true;
@@ -226,7 +229,7 @@ class _BmiState extends State<Bmi> {
           height: 60,
           curve: Curves.easeOut,
           decoration: BoxDecoration(
-            color: Colors.blue[900],
+            color: Colors.indigo,
             borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20)),
           ),
           duration: Duration(seconds:2),
