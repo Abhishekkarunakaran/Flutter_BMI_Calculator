@@ -22,7 +22,7 @@ class _CalTabState extends State<CalTab> {
       margin: EdgeInsets.all(8),
       height: 200,
       decoration: BoxDecoration(
-        color: Color(0xFFb9b9b9),
+        color: Colors.indigo,
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
@@ -40,14 +40,14 @@ class _CalTabState extends State<CalTab> {
           style: TextStyle(
             fontWeight: FontWeight.w500,
             fontSize: 16,
-            color: Colors.grey[900],
+            color: Colors.white,
           ),
           ),
           Text(widget.value.toString()+widget.unit,
             style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 25,
-              color: Colors.grey[900],
+              color: Colors.white,
             ),
           ),
           Row(
@@ -58,7 +58,7 @@ class _CalTabState extends State<CalTab> {
                   icon: Icon(
                 Icons.add,
                     size: 40,
-                    color: Colors.green[700],
+                    color: Colors.white,
               ),
                   onPressed: widget.increment,
               ),
@@ -66,7 +66,7 @@ class _CalTabState extends State<CalTab> {
                   icon: Icon(
                     Icons.remove,
                     size: 40,
-                    color: Colors.red[500],
+                    color: Colors.white,
                   ),
                   onPressed: widget.decrement,
                   )
